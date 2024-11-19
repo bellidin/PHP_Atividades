@@ -28,9 +28,9 @@ if ($result->num_rows > 0) {
 
         // Enquanto tiver dados preenchidos no BD 
         // Listar e exibir em formato de tabela
-        while ($row = $result-fetch_assoc()) {
+        while ($row = $result->fetch_assoc()) {
             echo "<tr>";
-            echo "<td>" . $row['ID'] . "</td>";
+            echo "<td>" . $row['id'] . "</td>";
             echo "<td>" . $row['nome'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
             echo "</tr>";
